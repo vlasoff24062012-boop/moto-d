@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МотоДеталі — Магазин запчастин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">Мото<span>Деталі</span></div>
+            <nav>
+                <a href="#hero">Головна</a>
+                <a href="#catalog">Каталог</a>
+                <a href="#contacts">Контакти</a>
+            </nav>
+            <div class="header-right">
+                <input type="text" id="search-input" class="search-input" placeholder="Пошук деталей...">
+
+                <div class="cart-wrapper">
+                    <div class="cart-icon">
+                        🛒 <span id="cart-count">0</span>
+                    </div>
+                    <div class="cart-dropdown">
+                        <h3>Ваш кошик</h3>
+                        <ul id="cart-items">
+                            <li class="empty-msg">Кошик поки порожній</li>
+                        </ul>
+                        <div class="cart-total">
+                            <strong>Разом: <span id="total-price">0</span> ₴</strong>
+                        </div>
+                        <button class="btn-checkout">Оформити замовлення</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">.
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">Details</span>
+                <h1>Якісні запчастини для мотоциклів та скутерів</h1>
+                <p>Широкий асортимент оригінальних та сумісних деталей. Висока якість, швидка доставка.</p>
+                <div class="hero-btns">
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src = https://scooter-boom.com.ua/modules/homeslider/images/f2a7529e8a83f6631a85aef364df0577e98c4715_logoban%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="products container">.
+        <h2>Популярні товари</h2>
+        <div class="product-grid" id="product-grid">
+            <div class="product-card" data-title="Карбюратор ПВК 34">
+                <img src = https://images.prom.ua/6678877184_karbyurator-mototsikla-pwk34.jpg>
+                <h3>Карбюратор ПВК 34</h3>
+                <p class="price">2850 ₴</p>
+                <button class="add-to-cart" data-name="Карбюратор ПВК 34" data-price="2850">В кошик</button>
+            </div>
+            <div class="product-card" data-title="Стейдж 6 Спорт Про">
+                <img src = https://scooter-boom.com.ua/72-large_default/variator-stage6-sportpro-yamahaminarelli.jpg>
+                <h3>Стейдж 6 Спорт Про</h3>
+                <p class="price">3450 ₴</p>
+                <button class="add-to-cart" data-name="Стейдж 6 Спорт Про" data-price="3450">В кошик</button>
+            </div>
+            <div class="product-card" data-title="Циліндр Поліні 70cc">
+                <img src = https://scooter-boom.com.ua/2027-large_default/porshnevaya-polini-sport-70ss-yamaha-bws-slider-minarelli-vertical.jpg>
+                <h3>Циліндр Поліні 70cc</h3>
+                <p class="price">4200 ₴</p>
+                <button class="add-to-cart" data-name="Циліндр Поліні 70cc" data-price="4200">В кошик</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Оформлення замовлення</h2>
+            <form id="checkout-form">
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="tel" placeholder="Номер телефону" required>
+                <input type="text" placeholder="Адреса доставки" required>
+        
+<div class="final-price">Сума до сплати: <span id="modal-total-price">0</span> ₴</div>
+                <button type="submit" class="btn-primary" style="width: 100%; border: none;">Підтвердити замовлення</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="contacts">
+        <div class="container">
+            <p> +380 097 609 850 </p>
+            <p> vlasoff24062012@gmail.com </p>
+            <p>© 2026 МотоДеталі. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
